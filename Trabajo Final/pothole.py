@@ -1,6 +1,6 @@
 import queue
 
-V = 201
+V = 200
 capacities = [[-1 for i in range(V)] for j in range(V)]
 
 
@@ -48,8 +48,8 @@ def findPath(s,t,prev):
     return pathCapacity
 
 def resetGraph():
-    for i in range(200):
-        for j in range(200):
+    for i in range(V):
+        for j in range(V):
             capacities[i][j] = -1
 
 def buildGraph(v):
